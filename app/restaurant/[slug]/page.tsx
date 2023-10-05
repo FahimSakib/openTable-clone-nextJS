@@ -1,23 +1,10 @@
+import Navbar from "../../components/Navbar";
+
 export default function RestaurantDetailsPage() {
     return (
         <main className="bg-gray-100 min-h-screen w-screen text-black">
             <main className="max-w-screen-2xl m-auto bg-white">
-                {/* NAVBAR */}
-                <nav className="bg-white p-2 flex justify-between">
-                    <a href="" className="font-bold text-gray-700 text-2xl">
-                        {" "} OpenTable{" "}
-                    </a>
-                    <div>
-                        <div className="flex">
-                            <button
-                                className="bg-blue-400 text-white border p-1 px-4 rounded mr-3"
-                            >
-                                Sign in
-                            </button>
-                            <button className="border p-1 px-4 rounded">Sign up</button>
-                        </div>
-                    </div>
-                </nav>
+                <Navbar />
                 {/* HEADER */}
                 <div className="bg-gradient-to-r to-[#5f6984] from-[#0f1f47] p-2">
                     <div className="text-left text-lg py-3 m-auto flex justify-center">
