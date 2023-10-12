@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import Description from "./components/Description";
 import Header from "./components/Header";
 import Images from "./components/Images";
@@ -10,22 +9,19 @@ import Title from "./components/Title";
 
 export default function RestaurantDetailsPage() {
     return (
-        <main className="bg-gray-100 min-h-screen w-screen text-black">
-            <main className="max-w-screen-2xl m-auto bg-white">
-                <Navbar />
-                <Header />
-                <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
-                    <div className="bg-white w-[70%] rounded p-3 shadow">
-                        <RestaurantNavBar />
-                        <Title />
-                        <Rating />
-                        <Description />
-                        <Images />
-                        <Reviews />
-                    </div>
-                    <Reservation />
+        <>
+            <Header />
+            <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
+                <div className="bg-white w-[70%] rounded p-3 shadow">
+                    <RestaurantNavBar />
+                    <Title />
+                    <Rating />
+                    <Description />
+                    <Images />
+                    <Reviews />
                 </div>
-            </main>
-        </main>
+                <Reservation />
+            </div>
+        </>
     )
 }
