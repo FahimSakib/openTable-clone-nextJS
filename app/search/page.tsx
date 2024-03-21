@@ -21,7 +21,8 @@ const fetchRestaurantsByCity = (searchParams: SearchParams) => {
         cuisine: true,
         slug: true,
         location: true,
-        price: true
+        price: true,
+        reviews: true
     }
 
     const where: any = {}
